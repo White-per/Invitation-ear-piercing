@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Baby Girl Ear Piercing Invitation</title>
 
   <style>
@@ -22,6 +22,7 @@
       min-height: 100vh;
       text-align: center;
       padding: 20px;
+      overflow-x: hidden;
     }
 
     .container {
@@ -32,6 +33,7 @@
       max-width: 500px;
       width: 100%;
       transition: transform 0.3s ease;
+      word-wrap: break-word;
     }
 
     .container:hover {
@@ -51,12 +53,14 @@
       font-size: 1.8rem;
       color: #ff69b4;
       margin-bottom: 10px;
+      line-height: 1.3;
     }
 
     p {
       font-size: 1rem;
       color: #444;
       margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     .invitation-link {
@@ -64,7 +68,7 @@
       background: #ff69b4;
       color: white;
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 25px;
       font-weight: bold;
       transition: background 0.3s ease;
@@ -78,12 +82,19 @@
       margin-top: 15px;
       font-size: 0.9rem;
       color: #777;
+      text-align: center;
     }
 
-    /* 📱 Mobile friendly */
+    /* ✅ Mobile Friendly Fix */
     @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
+      body {
+        padding: 15px;
+        justify-content: flex-start;
+      }
+
+      .container {
+        padding: 20px 15px;
+        margin-top: 40px;
       }
 
       .baby-pic {
@@ -91,8 +102,17 @@
         height: 120px;
       }
 
-      .container {
-        padding: 20px 15px;
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .invitation-link {
+        padding: 10px 20px;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -100,7 +120,7 @@
 
 <body>
   <div class="container">
-    <img src="baby.jpg" alt="Baby Girl" class="baby-pic">
+    <img src="baby.jpg" alt="Baby Girl" class="baby-pic" />
     <h1>Welcome to Our Baby Girl's Ear Piercing Ceremony 💖</h1>
     <p>We are excited to invite you to celebrate this joyful occasion with us!</p>
     <a href="invitation.pdf" class="invitation-link" target="_blank">View Invitation</a>
